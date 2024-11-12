@@ -2,13 +2,60 @@
 const today = new Date();
 ---
 
-<footer>
-	&copy; {today.getFullYear()}-{today.getFullYear() + 1} Ben Smith.<br />
-	<smol>
-		Thanks to <a href="https://bsky.app/profile/cassidoo.co" target="_blank"
-			>Cassidy</a
-		> for the foundation, and the idea!
-	</smol>
+<footer class="footer">
+	<link
+		rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+		crossorigin="anonymous"
+		referrerpolicy="no-referrer"
+	/>
+	<div class="footer-socials" style="font-size: 1.5rem;">
+		<a
+			href="https://bsky.app/profile/benjs.uk"
+			target="_blank"
+			class="footer-social"
+		>
+			<i class="fa-brands fa-bluesky"></i>
+		</a>
+		<a
+			href="https://blog.benjs.uk/rss.xml"
+			target="_blank"
+			class="footer-social"
+		>
+			<i class="fa-solid fa-rss-square"></i>
+		</a>
+		<a
+			href="https://github.com/barxilly"
+			target="_blank"
+			class="footer-social"
+		>
+			<i class="fa-brands fa-github"></i>
+		</a>
+		<a href="https://dev.to/bendotjs" target="_blank" class="footer-social">
+			<i class="fa-brands fa-dev"></i>
+		</a>
+		<a
+			href="https://wa.me/447495338673"
+			target="_blank"
+			class="footer-social"
+		>
+			<i class="fa-brands fa-whatsapp"></i>
+		</a>
+		<a
+			href="https://www.linkedin.com/in/benjsuk/"
+			target="_blank"
+			class="footer-social"
+		>
+			<i class="fa-brands fa-linkedin"></i>
+		</a>
+		<a href="mailto:ben@benjs.uk" target="_blank" class="footer-social">
+			<i class="fa-solid fa-envelope"></i>
+		</a>
+	</div>
+	<p>
+		&copy; {new Date().getFullYear()}-{new Date().getFullYear() + 1} Ben Smith.
+		All rights reserved.
+	</p>
 </footer>
 <style>
 	footer {

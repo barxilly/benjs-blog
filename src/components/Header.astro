@@ -1,0 +1,24 @@
+---
+import HeaderLink from "./HeaderLink.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
+---
+
+<header>
+	<div class="header-section">
+		<div class="header-frame">
+			<a href="/"><h1 style="text-align: center;">{SITE_TITLE}</h1></a>
+			<h2 style="text-align: center; font-size: 1em;">
+				{SITE_DESCRIPTION}
+			</h2>
+		</div>
+	</div>
+</header>
+<nav>
+	<HeaderLink href="/">home</HeaderLink>
+	<HeaderLink href="/posts">posts</HeaderLink>
+</nav>
+<style>
+	h2 {
+		margin: 0.5em 0;
+	}
+</style>
